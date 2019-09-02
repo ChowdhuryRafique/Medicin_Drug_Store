@@ -1,0 +1,221 @@
+@media (max-width: 768px) {
+    #full_nav.position-fixed {
+        z-index: 8888;
+        width: 100%;
+        top: 0;
+        left: 0;
+        padding: 0px 0;
+    }
+    .text-header p {
+        font-weight: 550;
+        margin: 0;
+        padding: 0;
+        font-size: 10px;
+    }
+    .iconHeader i {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+    .left_header_center {
+        float: center;
+        margin-left: 0;
+      }
+    .hello {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+    }
+    .Main-top-header {
+        background-color: #5EBE42;
+        color: #fff;
+        padding: 4px 0px;
+        clear: both;
+    }
+    .text-header a i {
+        color: #fff;
+        font-size: 8px;
+        margin: 0;
+        padding: 0 10px;
+        padding-left: 10px;
+    }
+    button.loginbutton {
+        cursor: pointer;
+        background-color: #6D7289;
+        border: none;
+        color: #fff;
+        padding: 1px 20px;
+        border-radius: 50px;
+        outline: none;
+    }
+    .form-inline {
+        display: ruby-base-container;
+}
+.collapse.show {
+    display: inline-flex;
+}
+.mr-auto, .mx-auto {
+    margin-right: auto !important;
+    display: contents;
+}
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+    color: rgba(0,0,0,.9);
+    margin-right: 25px;
+    font-size: 15px;
+}
+.form-inline {
+    display: ruby-base-container;
+    margin-left: 86px;
+}
+button.loginbutton {
+    margin-top: -5px;
+
+}
+.full-contant h1 {
+    margin-bottom: 25px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.h4, h4 {
+    font-size: 15px;
+}
+.h3, h3 {
+    font-size: 22px;
+}
+button.search {
+    background-color: #39BAF0;
+    border: none;
+    padding: 10px;
+    border: 1px solid #39BAF0;
+    outline: none;
+    cursor: pointer;
+}
+.search i {
+    font-size: 18px;
+    color: #fff;
+}
+#dropFileForm i {
+    color: #888;
+    font-size: 40px;
+}
+.full-search {
+    background-color: #ECEFF1;
+    padding: 50px 0px 25px 0px;
+}
+.BottomFooter {
+
+    background-color: #48A4B8;
+    padding: 10px;
+    color: #fff;
+
+}
+.arrow a i {
+    font-size: 22px;
+    color: #5EBE42;
+    height: 40px;
+    width: 30px;
+    line-height: 40px;
+    background-color: #39BAF0;
+    text-align: center;
+    border-radius: 10px;
+}
+}
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #full_nav.position-fixed {
+        z-index: 8888;
+        width: 100%;
+        top: 0;
+        left: 0;
+        padding: 0px 0;
+    }
+    .container {
+        max-width: 100%;
+    }
+    button.loginbutton:last-child{
+        margin-left: 0;
+    }
+    .form-inline {
+        display: ruby-base-container;
+        margin-left: 278px;
+    }
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .container {
+        max-width: 100%;
+    }
+    button.loginbutton:last-child{
+        margin-left: 0;
+    }
+    .form-inline {
+        display: ruby-base-container;
+        margin-left: 278px;
+    }
+    .Main-top-header {
+        background-color: #5EBE42;
+        color: #fff;
+        padding: 4px 0px;
+        clear: both;
+    }
+    .text-header a i {
+        color: #fff;
+        font-size: 8px;
+        margin: 0;
+        padding: 0 10px;
+        padding-left: 10px;
+    }
+    button.loginbutton {
+        cursor: pointer;
+        background-color: #6D7289;
+        border: none;
+        color: #fff;
+        padding: 1px 20px;
+        border-radius: 50px;
+        outline: none;
+    }
+    .form-inline {
+        display: ruby-base-container;
+}
+.collapse.show {
+    display: inline-flex;
+}
+.mr-auto, .mx-auto {
+    margin-right: auto !important;
+    display: contents;
+}
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+    color: rgba(0,0,0,.9);
+    margin-right: 25px;
+    font-size: 15px;
+}
+.form-inline {
+    display: ruby-base-container;
+    margin-left: 502px;
+}
+button.loginbutton {
+    margin-top: -5px;
+
+}
+.Main-top-header {
+    background-color: #5EBE42;
+    color: #fff;
+    padding: 4px 0px;
+    clear: both;
+    font-size: 15px;
+}
+
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .container {
+        max-width: 99%;
+    }
+}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { ... }
