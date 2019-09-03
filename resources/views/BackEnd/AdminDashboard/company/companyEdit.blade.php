@@ -1,13 +1,13 @@
+
 @extends('BackEnd.AdminDashboard.master')
 @section('admin')
-
 <div class="breadcrumbs">
     <div class="breadcrumbs-inner">
         <div class="row m-0">
             <div class="col-sm-4">
                 <div class="page-header float-left">
                     <div class="page-title">
-                        <h1>Disease Add Dashboard</h1>
+                        <h1>Company Add Dashboard</h1>
                     </div>
                 </div>
             </div>
@@ -23,12 +23,13 @@
             <div class="row">
                 <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                     <!-- Company add-->
-                    <form action="{{route('disease_create')}}" method="post">
+                    <form action="{{ route('update')}}" method="post">
                     {{csrf_field()}}
+                    <input type="hidden" name="com_id" value="{{$create->id}}">
                     <div class="form-group row">
-                    <label for="inputPassword" class="col-sm-2 col-form-label">Disease Name:</label>
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Company Name:</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="Type Name" placeholder="Enter Name" name="disease_name">
+                        <input type="text" class="form-control" placeholder="Enter Name" value="{{$create->companyName}}" name="CompanyName">
                     </div>
                     
                 </div>

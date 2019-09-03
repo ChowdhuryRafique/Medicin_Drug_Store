@@ -8,7 +8,7 @@ class RegisterController extends Controller
 {
     public function Register(){
         
-        return view('BackEnd.AdminDashboard.register');
+        return view('auth.register');
     }
     
 }

@@ -31,12 +31,17 @@
                     <tr>
                       <th scope="col">Serials</th>
                       <th scope="col">Company Name</th>
+                      <th scope="col">Delete</th>
+                      <th scope="col">Update</th>
+
                     </tr>
                     </thead>
                     @foreach($companyCreate as $company)
                     <tr>
                       <th scope="row">{{$company->id}}</th>
-                      <td>{{$company->CompanyName}}</td>
+                      <td>{{$company->companyName}}</td>
+                      <td> <a type="submit" class="btn btn-warning" href="{{url('delete')}}/{{$company->id}}">Delete</a></td>
+                      <td> <a type="submit" class="btn btn-primary" href="{{url('/company/Edit')}}/{{$company->id}}" >Edit</a></td>
                     </tr>
                     @endforeach
                   </tbody>
