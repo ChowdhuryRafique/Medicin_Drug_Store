@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 
 class RecycleController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     //MedicinRestore
     public function MedicinRestore(){
         return view('BackEnd.AdminDashboard.recycle.MediRestore');

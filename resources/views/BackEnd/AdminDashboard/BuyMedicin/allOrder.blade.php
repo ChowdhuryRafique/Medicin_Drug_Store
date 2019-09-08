@@ -24,8 +24,36 @@
             <div class="row">
 
                 <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <a type="submit"  class="btn btn-primary" href="{{route('order')}}">Add to Order</a>
                     <!-- All Order show-->
-                    <h1>Table add</h1>
+                    <table class="table table-bordered table-responsive{-sm|-md|-lg|-xl}">
+              <thead>
+              <tbody>
+                <tr>
+                  <th scope="col">Id</th>
+                  <th scope="col">Medicine Name</th>
+                  <th scope="col">Medicine Quantity</th>
+                  <th scope="col">Medicine Price</th>
+                
+                  <th scope="col">Delete</th>
+                  <th scope="col">Edit</th>
+                </tr>
+                </thead>
+                @foreach($medicinCreate as $medicine)
+                <tr>
+                  <th scope="row">{{$medicine->id}}</th>
+                  <td>{{$medicine->medicinName}}</td>
+                  <td>{{$medicine->medicinQuantity}}</td>
+                  <td>{{$medicine->medicinPrice}}</td>
+                  
+                  <td>  <span class="name"><input type="text" name="" id="{{$medicine->id}}"> </span> </td>
+
+                      <td>  <span class="name"><button type="submit" name="button" class="btn btn-warning add_button" value="{{$medicine->id}}">Add</button></span> </td>
+                 
+                </tr>
+                @endforeach
+              </tbody>
+            </table>
                     <!--End Order show-->
                 </div>
             </div> <!-- .row -->
@@ -34,4 +62,23 @@
 </div><!-- .content -->
 
 
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+ $(document).ready(function(){
+      $('.add_button').click(function(){
+       var idicca = $(this).val();
+       var quantity = $('#'+idicca).val();
+      // var price_from_table = $(this).closest('tr').find('.price_from_table').html();
+       if(quantity==''){
+         alert("Kiccu Nai!!");
+       }
+       else{
+         var link = '/all/order/buy/'+idicca+'/'+quantity;
+         window.location.href = link;
+       }
+      });
+    });
+</script>
 @endsection

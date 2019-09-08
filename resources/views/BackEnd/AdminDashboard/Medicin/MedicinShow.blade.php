@@ -1,7 +1,4 @@
-<div>
-    <div>
-        <div>
-            
+         
             @extends('BackEnd.AdminDashboard.master')
             
             @section('admin')
@@ -71,8 +68,3 @@
                         </div><!-- .content -->
             
             @endsection
-            
-            
-        </div>
-    </div>
-</div>

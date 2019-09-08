@@ -19,7 +19,7 @@
 </head>
 <body class="position-relative">
     <!--   start arrow part-->
-    <div class="arrow"><a href="{{asset('Index')}}"><i class="fas fa-angle-double-up"></i></a></div>
+    <div class="arrow"><a href="{{asset('/')}}"><i class="fas fa-angle-double-up"></i></a></div>
     <!-- Start main top header -->
     <div class="Main-top-header">
             <div class="container">

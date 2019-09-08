@@ -58,6 +58,13 @@
 
 
     Route::get('/AllOrder','BuyMedicinController@AllOrder')->name('AllOrder');
+    Route::get('/addcard','BuyMedicinController@addcard')->name('order');
+    Route::post('/order_all','BuyMedicinController@order_all')->name('order_all');
+
+
+    Route::get('/all/order/buy/{medicine_id}/{quantity}', 'BuyMedicinController@medicine_add_cart');
+
+
     Route::get('/MedicinQuantity','BuyMedicinController@MedicinQuantity')->name('MedicinQuantity');
 
     Route::get('/StockOut','StockOutController@StockOut')->name('StockOut');
