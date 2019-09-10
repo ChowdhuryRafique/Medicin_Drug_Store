@@ -35,7 +35,7 @@
                   <th scope="col">Medicine Quantity</th>
                   <th scope="col">Medicine Price</th>
                 
-                  <th scope="col">Delete</th>
+                  <th scope="col">Input Quantity</th>
                   <th scope="col">Edit</th>
                 </tr>
                 </thead>

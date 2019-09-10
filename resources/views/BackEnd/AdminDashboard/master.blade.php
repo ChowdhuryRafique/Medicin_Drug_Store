@@ -71,7 +71,14 @@
                             </a>
     
                             <div class="user-menu dropdown-menu">
-                                <a class="nav-link" href="#"><i class="fa fa- user"></i>My Profile</a>
+                                <a class="nav-link" href="#"><i class="fa fa- user"></i>
+                                    {{Auth::user()->name}}
+                                    @if(Auth::user()->role==1)
+                                        Admin
+                                        @elseif (Auth::user()->role==2)
+                                        Sellsman
+                                    @endif
+                                </a>
     
                                 <a class="nav-link" href="#"><i class="fa fa -cog"></i>Settings</a>
     

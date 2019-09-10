@@ -6,7 +6,7 @@
             <div class="col-sm-4">
                 <div class="page-header float-left">
                     <div class="page-title">
-                        <h1>Restore Company Dashboard</h1>
+                        <h1>Product Sell Dashboard</h1>
                     </div>
                 </div>
             </div>
@@ -28,10 +28,10 @@
               <table class="table " id="example">
                 <thead>
                   <tr>
-                    <th class="serial">Serial</th>
+                
                     <th>Medicine Name</th>
                     <th>Medicine Quantity</th>
-                    <th>input</th>
+                  
 
 
                   </tr>

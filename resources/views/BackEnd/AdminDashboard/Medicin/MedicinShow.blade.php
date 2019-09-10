@@ -27,7 +27,7 @@
             
                                         <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                                             <!-- Medicins show-->
-<table class="table table-bordered table-responsive{-sm|-md|-lg|-xl}">
+        <table class="table table-bordered table-responsive{-sm|-md|-lg|-xl}">
               <thead>
               <tbody>
                 <tr>

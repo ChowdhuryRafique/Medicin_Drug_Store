@@ -1,7 +1,8 @@
 <!--   start Contact us-->
 <div class="full-contact-us">
         <div class="container">
-            <form id="contact" action="" method="post">
+            <form id="contact" action="{{route('contactform')}}" method="post">
+            {{csrf_field()}}
                 <h3>Get in touch with us:
 
                 </h3>
@@ -9,16 +10,16 @@
 
                 </h4>
                 <fieldset>
-                    <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                    <input placeholder="Your name" name="name" type="text" tabindex="1" required autofocus>
                 </fieldset>
                 <fieldset>
-                    <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                    <input placeholder="Your Email Address" name="email" type="email" tabindex="2" required>
                 </fieldset>
                 <fieldset>
-                    <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+                    <input placeholder="Your Phone Number" name="phone" type="tel" tabindex="3" required>
                 </fieldset>
                 <fieldset>
-                    <textarea placeholder="Type your message here..." tabindex="5" required></textarea>
+                    <textarea placeholder="Type your message here..." name="message" tabindex="5" required></textarea>
                 </fieldset>
                 <fieldset>
                     <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>

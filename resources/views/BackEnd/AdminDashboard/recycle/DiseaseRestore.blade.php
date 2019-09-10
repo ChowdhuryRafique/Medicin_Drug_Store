@@ -25,6 +25,26 @@
                 <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                     <!-- All Restore Disease show-->
                     <h1>Table add</h1>
+                    <table class="table table-bordered table-responsive{-sm|-md|-lg|-xl}">
+                            <thead>
+                            <tbody>
+                              <tr>
+                                <th scope="col">Serials</th>
+                                <th scope="col">Disease Name</th>
+                                <th scope="col">Action</th>
+                                
+          
+                              </tr>
+                              </thead>
+                              @foreach($diseases as $disease)
+                              <tr>
+                                <th scope="row">{{$disease->id}}</th>
+                                <td>{{$disease->disease_name}}</td>
+                                <td> <a type="submit" class="btn btn-warning" href="{{url('/disease/restore')}}/{{$disease->id}}">Restore</a></td>
+                              </tr>
+                              @endforeach
+                            </tbody>
+                          </table>
                     <!--End Disease show-->
                 </div>
             </div> <!-- .row -->

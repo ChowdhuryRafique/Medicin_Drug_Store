@@ -12,7 +12,7 @@
                                     <a href="index.html"><i class="menu-icon fa fa-laptop"></i> Website Home</a>
                                 </li>
                                 <li class="bg">
-                                    <a href="{{route('Register')}}"><i class="menu-icon fa fa-laptop"></i> Actor Register</a>
+                                    <a href="{{route('register')}}"><i class="menu-icon fa fa-laptop"></i> Actor Register</a>
                                 </li>
                                 <li class="menu-title">Drug Elements</li><!-- /.menu-title -->
                                 <li class="menu-item-has-children dropdown">
@@ -37,11 +37,7 @@
                                     </ul>
                                 </li>
                                 <li class="menu-item-has-children dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-puzzle-piece"></i>Buy Medicin</a>
-                                    <ul class="sub-menu children dropdown-menu">                            <li><i class="fa fa-puzzle-piece"></i><a href="{{route('AllOrder')}}">All Orders</a></li>
-                                        <li><i class="fa fa-puzzle-piece"></i><a href="{{route('MedicinQuantity')}}">Medicin Quentity Add</a></li>
-            
-                                    </ul>
+                                    <a href="{{route('AllOrder')}}"><i class="menu-icon fa fa-puzzle-piece"></i>Sell Medicin</a>
                                 </li>
                                 <li class="menu-item-has-children dropdown">
                                     <a href="{{route('StockOut')}}"> <i class="menu-icon fa fa-puzzle-piece"></i>Stock Out</a>
@@ -53,6 +49,10 @@
                                         <li><i class="fa fa-puzzle-piece"></i><a href="{{route('CompanyRestore')}}">Company Restore</a></li>
                                         <li><i class="fa fa-puzzle-piece"></i><a href="{{route('DiseaseRestore')}}">Disease Restore</a></li>
                                     </ul>
+                                </li>
+                                <li class="menu-item-has-children dropdown">
+                                    <a href="{{route('message')}}"> <i class="menu-icon fa fa-puzzle-piece"></i>Customer Message</a>
+                                   
                                 </li>
                             </ul>
                         </div><!-- /.navbar-collapse -->

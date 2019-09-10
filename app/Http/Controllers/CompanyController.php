@@ -7,12 +7,10 @@ use App\company;
 
 class CompanyController extends Controller
 {  
-    
     public function __construct()
     {
         $this->middleware('auth');
     }
-    
     // Company Add
     public function CompanyAdd(){
         return view('BackEnd.AdminDashboard.company.companyAdd');
@@ -42,8 +40,7 @@ class CompanyController extends Controller
 public function companyupdate(Request $request){
     $id=$request->com_id;
     company::where('id',$id)->update([
-        'companyName'=> $request->CompanyName,//form name
-      
+        'companyName'=> $request->CompanyName,//form name   
 ]);
 return redirect()->route('CompanyShow');
 }

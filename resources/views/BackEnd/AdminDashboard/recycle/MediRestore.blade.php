@@ -9,6 +9,38 @@
                 <div class="page-header float-left">
                     <div class="page-title">
                         <h1>Restore Medicins Dashboard</h1>
+                        <table class="table table-bordered table-responsive{-sm|-md|-lg|-xl}">
+                                <thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="col">Id</th>
+                                    <th scope="col">Medicine Name</th>
+                                    <th scope="col">Medicine Quantity</th>
+                                    <th scope="col">Medicine Price</th>
+                                    <th scope="col">Medicine Description(Optional)</th>
+                                    <th scope="col">Company Name</th>
+                                    <th scope="col">Disease Name:</th>
+                                    <th scope="col">Image Upload</th>
+                                    <th scope="col">Action</th>
+                                  </tr>
+                                  </thead>
+                                  @foreach($medicinCreate as $medicine)
+                                  <tr>
+                                    <th scope="row">{{$medicine->id}}</th>
+                                    <td>{{$medicine->medicinName}}</td>
+                                    <td>{{$medicine->medicinQuantity}}</td>
+                                    <td>{{$medicine->medicinPrice}}</td>
+                                    <td>{{$medicine->medicinDescription}}</td>
+                                    <td>{{$medicine->medicinSelect}}</td>
+                                    <td>{{$medicine->diseaseName}}</td>
+                                    <td><img src="{{asset('/storage')}}/{{$medicine->imageupload}}" alt="image" /></td>
+                                   <td> <a type="submit" class="btn btn-warning" href="{{url('admin/recycle/medicine/restore')}}/{{$medicine->id}}">Restore</a></td>
+                                                                 
+                                  </tr>
+                                  @endforeach
+                                </tbody>
+                              </table>
+                                              
                     </div>
                 </div>
             </div>
